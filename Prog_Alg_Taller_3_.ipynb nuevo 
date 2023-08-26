@@ -1,0 +1,303 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOfqnBH2TUATsN4eZgTs+pL",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/josejulianpr24/intro_python_202320/blob/main/Prog_Alg_Taller_3_.ipynb%20nuevo%20\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Curso de Programacion y Algoritmia UPB 202320\n",
+        "\n",
+        "Nombre.. José Julián Pérez Ramos\n",
+        "\n",
+        "Id 000461502\n",
+        "\n",
+        "Email: josej.perez@upb.edu.co\n",
+        "\n",
+        "Nombre.. Jesus David Padilla Agresot\n",
+        "\n",
+        "Id: 000501420\n",
+        "\n",
+        "Email: jesus.padillaa@upb.edu.co\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "U9q9ygs-wezJ"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "$Problema 1$\n",
+        "Calcular y mostrar la posición de una partícula que experimenta movimiento uniformemente\n",
+        "acelerado a partir de su posición inicial (𝑥0), velocidad inicial (𝑣0) y aceleración (𝑎) en dos instantes de\n",
+        "tiempo diferentes. La posición en un instante de tiempo está dada por:\n",
+        "\n",
+        "\n",
+        "$x = 𝑥0 + 𝑣0𝑡 +1/2𝑎𝑡^2$\n",
+        "\n",
+        "\n",
+        "    \n"
+      ],
+      "metadata": {
+        "id": "ajpmfnkuJ1K3"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x0 = 38\n",
+        "v0 = 20\n",
+        "a = 12\n",
+        "t = 10\n",
+        "x = x0 + v0 + 1/2 * a * t ** 2\n",
+        "float(input(\"ingrese el valor de la posicion inicial: \"))\n",
+        "float(input(\"ingrese el valor de la velocidad inicial:\"))\n",
+        "float(input(\"ingrese el valor de la aceleracion:\"))\n",
+        "float(input(\"ingrese el valor del tiempo\"))\n",
+        "print(\"la posicion de la particula con posicion inicial\", (str(x0)), \"velocidad inicial\", (str(v0)), \"aceleracion\", (str(a)), \"tiempo\", (str(t)),\"es\",str(x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8fRM34QqKhDr",
+        "outputId": "dcc78a2f-0126-4590-db06-8ce41e3ce13c"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ingrese el valor de la posicion inicial: 38\n",
+            "ingrese el valor de la velocidad inicial:20\n",
+            "ingrese el valor de la aceleracion:12\n",
+            "ingrese el valor del tiempo10\n",
+            "la posicion de la particula con posicion inicial 38 velocidad inicial 20 aceleracion 12 tiempo 10 es 658.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "$Problema 2.$\n",
+        "Calcular y mostrar la distancia entre dos puntos $𝑃1 y 𝑃2$ ubicados en las coordenadas $(𝑥1, 𝑦1) y (𝑥2, 𝑦2)$. La distancia euclidiana se calcula con la ecuación:\n",
+        "\n",
+        "$𝑑 = √(𝑥2 − 𝑥1)2 + (𝑦2 − 𝑦1)$\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "Grb4BDhb_SJO"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "b5ngtA9uJx80"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 28,
+      "metadata": {
+        "id": "RNxTqh57_MuA",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7ee54904-b228-4fa4-c9fc-9dbbcc9da26d"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese la coordenada x1: 5.3\n",
+            "Ingrese la coordenada y1: 2.8\n",
+            "Ingrese la coordenada x2: 1.3\n",
+            "Ingrese la coordenada y2: 4.2\n",
+            "La distancia entre los dos puntos es: 4.237924020083418\n"
+          ]
+        }
+      ],
+      "source": [
+        "import math\n",
+        "\n",
+        "x1 = float(input(\"Ingrese la coordenada x1: \"))\n",
+        "y1 = float(input(\"Ingrese la coordenada y1: \"))\n",
+        "x2 = float(input(\"Ingrese la coordenada x2: \"))\n",
+        "y2 = float(input(\"Ingrese la coordenada y2: \"))\n",
+        "\n",
+        "distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)\n",
+        "print(\"La distancia entre los dos puntos es:\", distance)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "$Problema 3$\n",
+        "Calcular y mostrar el valor del volumen de un cilindro cuyo radio y altura sean ingresados por el\n",
+        "usuario. El volumen de un cilindro está dado por:\n",
+        "\n",
+        "$𝑉 = 𝜋𝑟2ℎ$\n",
+        "\n",
+        "Donde $𝜋 = 3.141592,$ 𝑟 es el radio y ℎ la altura."
+      ],
+      "metadata": {
+        "id": "xCJCdl5QgPdV"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "radio = float(input(\"Ingrese el valor del radio  \"))\n",
+        "altura = float(input(\"Ingrese el valor de la altura \"))\n",
+        "\n",
+        "# Definir el valor de pi\n",
+        "pi = 3.141592\n",
+        "\n",
+        "# Calcular el volumen del cilindro usando la fórmula V = pi * r^2 * h\n",
+        "volumen = pi * (radio ** 2) * altura\n",
+        "\n",
+        "# Mostrar el resultado\n",
+        "print(f\"El volumen del cilindro con radio {radio} y altura {altura} es: {volumen}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "-5daNt8pma0n",
+        "outputId": "f126af61-d40c-4d32-e07a-e78a533ac19c"
+      },
+      "execution_count": 58,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingrese el valor del radio  34.5\n",
+            "Ingrese el valor de la altura 10\n",
+            "El volumen del cilindro con radio 34.5 y altura 10.0 es: 37392.798780000005\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "$Problema    4$\n",
+        "   \n",
+        "   Calcular y mostrar el resultado de las siguientes operaciones lógicas:\n",
+        "1. A > B y B > D\n",
+        "2. B <= C o C < D\n",
+        "3. A = B y B > C\n",
+        "4. A < C o B < C\n",
+        "5. A + D < C y B > 5\n",
+        "6. D – C >= - A * B\n",
+        "7. D * C == 5 o C * A > 9\n",
+        "8. A * B + C > - D * 10\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "fMIDGatMLW2R"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Definir los valores de A, B, C y D\n",
+        "A = 10\n",
+        "B = 5\n",
+        "C = 8\n",
+        "D = 2\n",
+        "# 1. A > B y B > D\n",
+        "resultado1 = A > B and B > D\n",
+        "\n",
+        "# 2. B <= C o C < D\n",
+        "resultado2 = B <= C or C < D\n",
+        "\n",
+        "# 3. A = B y B > C\n",
+        "resultado3 = A == B and B > C\n",
+        "\n",
+        "# 4. A < C o B < C\n",
+        "resultado4 = A < C or B < C\n",
+        "\n",
+        "# 5. A + D < C y B > 5\n",
+        "resultado5 = A + D < C and B > 5.4\n",
+        "\n",
+        "# 6. D - C >= -A * B\n",
+        "resultado6 = D - C >= -A * B\n",
+        "\n",
+        "# 7. D * C == 5 o C * A > 9\n",
+        "resultado7 = D * C == 5 or C * A > 9\n",
+        "\n",
+        "# 8. A * B + C > -D * 10\n",
+        "resultado8 = A * B + C > -D * 10\n",
+        "\n",
+        "# Mostrar los resultados\n",
+        "print(\"Resultado 1:\", resultado1)\n",
+        "print(\"Resultado 2:\", resultado2)\n",
+        "print(\"Resultado 3:\", resultado3)\n",
+        "print(\"Resultado 4:\", resultado4)\n",
+        "print(\"Resultado 5:\", resultado5)\n",
+        "print(\"Resultado 6:\", resultado6)\n",
+        "print(\"Resultado 7:\", resultado7)\n",
+        "print(\"Resultado 8:\", resultado8)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_5eiQ6TEOUYs",
+        "outputId": "405feeff-058f-42ec-a317-c6b1d041fb0c"
+      },
+      "execution_count": 35,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Resultado 1: True\n",
+            "Resultado 2: True\n",
+            "Resultado 3: False\n",
+            "Resultado 4: True\n",
+            "Resultado 5: False\n",
+            "Resultado 6: True\n",
+            "Resultado 7: True\n",
+            "Resultado 8: True\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
